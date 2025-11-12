@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Nama Anda</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Resume pribadi — Nama Anda. Portfolio, pengalaman, keahlian, dan kontak.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Nama Anda</a>
+
+      <nav class="nav" id="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="burger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <h1 class="hero-title">Halo, saya <span class="accent">Nama Anda</span></h1>
+          <p class="hero-sub">Desainer & Pengembang Web — Membuat pengalaman digital yang rapi, cepat, dan mudah digunakan.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#portfolio">Lihat Portfolio</a>
+            <a class="btn btn-outline" href="#contact">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="card-avatar">
+            <!-- simple placeholder avatar -->
+            <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100" height="100" rx="12" fill="#EEF2FF"/>
+              <circle cx="50" cy="36" r="18" fill="#C7D2FE"/>
+              <path d="M18 82c6-18 28-20 32-20s26 2 32 20" fill="#C7D2FE"/>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h3>Nama Anda</h3>
+            <p class="muted">Frontend Developer</p>
+            <ul class="meta-list">
+              <li>📍 Kota, Negara</li>
+              <li>✉️ <a href="mailto:you@example.com">you@example.com</a></li>
+              <li>🌐 <a href="https://your-website.example" target="_blank" rel="noopener">website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container reveal">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Saya adalah pengembang web dengan pengalaman membuat antarmuka yang bersih dan responsif. Saya menyukai tantangan pemecahan masalah, optimasi performa, dan desain yang fokus pada pengguna.</p>
+            <p>Saat ini saya mengerjakan proyek freelance dan terus belajar teknologi modern seperti JavaScript (ES6+), CSS modern, dan framework ringan.</p>
+            <a class="btn" href="#contact">Ajak Kerja Sama</a>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>6+</h3>
+              <p>Tahun Pengalaman</p>
+            </div>
+            <div class="stat">
+              <h3>30+</h3>
+              <p>Proyek Selesai</p>
+            </div>
+            <div class="stat">
+              <h3>15</h3>
+              <p>Klien</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-column reveal">
+            <h4>Frontend</h4>
+            <div class="skill">
+              <label>HTML & CSS</label>
+              <div class="skill-bar"><div class="skill-fill" data-skill="95"></div></div>
+            </div>
+            <div class="skill">
+              <label>JavaScript</label>
+              <div class="skill-bar"><div class="skill-fill" data-skill="88"></div></div>
+            </div>
+            <div class="skill">
+              <label>React / Vue</label>
+              <div class="skill-bar"><div class="skill-fill" data-skill="80"></div></div>
+            </div>
+          </div>
+
+          <div class="skills-column reveal">
+            <h4>Design & Tools</h4>
+            <div class="skill">
+              <label>UI/UX</label>
+              <div class="skill-bar"><div class="skill-fill" data-skill="82"></div></div>
+            </div>
+            <div class="skill">
+              <label>Figma</label>
+              <div class="skill-bar"><div class="skill-fill" data-skill="78"></div></div>
+            </div>
+            <div class="skill">
+              <label>Performance</label>
+              <div class="skill-bar"><div class="skill-fill" data-skill="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Senior Frontend Developer <span class="muted">— Perusahaan A</span></h3>
+              <p class="muted">2022 — Sekarang</p>
+              <p>Membangun antarmuka produk SaaS dengan fokus pada performa dan aksesibilitas, memimpin tim kecil, dan menerapkan pattern design system.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Frontend Developer <span class="muted">— Perusahaan B</span></h3>
+              <p class="muted">2019 — 2022</p>
+              <p>Mengembangkan aplikasi web responsif, mengoptimalkan load time, dan berkolaborasi dengan tim desain untuk pengalaman pengguna terbaik.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Freelance <span class="muted">— Klien Independen</span></h3>
+              <p class="muted">2016 — 2019</p>
+              <p>Proyek-proyek kecil hingga menengah: landing pages, e-commerce kecil, dan integrasi API.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section-title reveal">Portfolio</h2>
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23EEF2FF'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234f46e5' font-family='Inter, Arial' font-size='28'%3EProject A%3C/text%3E%3C/svg%3E" alt="Project A">
+            <div class="portfolio-card-body">
+              <h4>Project A</h4>
+              <p class="muted">Landing page & UI development</p>
+              <a href="#" class="btn btn-sm">Detail</a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23F8FAFC'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%232f343e' font-family='Inter, Arial' font-size='28'%3EProject B%3C/text%3E%3C/svg%3E" alt="Project B">
+            <div class="portfolio-card-body">
+              <h4>Project B</h4>
+              <p class="muted">Dashboard & Data Viz</p>
+              <a href="#" class="btn btn-sm">Detail</a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23FEF3C7'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23B45309' font-family='Inter, Arial' font-size='28'%3EProject C%3C/text%3E%3C/svg%3E" alt="Project C">
+            <div class="portfolio-card-body">
+              <h4>Project C</h4>
+              <p class="muted">E-commerce</p>
+              <a href="#" class="btn btn-sm">Detail</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container reveal">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Nama</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-row">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="btn">Kirim Pesan</button>
+            </div>
+            <p id="form-note" class="muted small">Form ini hanya demo — ganti action/handler sesuai kebutuhan.</p>
+          </form>
+
+          <div class="contact-info">
+            <h4>Informasi</h4>
+            <p class="muted">Saya terbuka untuk pekerjaan freelance atau kesempatan kerja. Kirim email atau gunakan form di samping.</p>
+            <ul class="contact-meta">
+              <li>📧 you@example.com</li>
+              <li>📞 +62 812 3456 7890</li>
+              <li>📍 Kota, Negara</li>
+            </ul>
+            <div class="socials">
+              <a href="#" aria-label="GitHub" class="social">GitHub</a>
+              <a href="#" aria-label="LinkedIn" class="social">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nama Anda — Built with care</p>
+      <nav class="footer-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
